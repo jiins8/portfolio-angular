@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="/">Jinshuo</a>
+    </div>
+
+    <!-- Botón del menú (solo en móvil) -->
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav [class.active]="menuOpen" class="nav">
+      <a href="#home" (click)="toggleMenu()">Inicio</a>
+      <a href="#about" (click)="toggleMenu()">Sobre mí</a>
+      <a href="#projects" (click)="toggleMenu()">Proyectos</a>
+      <a href="#contact" (click)="toggleMenu()">Contacto</a>
+    </nav>
+  </div>
+</header>

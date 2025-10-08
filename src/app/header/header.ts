@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './header.html',
-  styleUrls: ['./header.css']
+  styleUrl: './header.css'
 })
 export class Header {
-  menuOpen = false;
+  activeSection = 'home';
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const sections = document.querySelectorAll('section[id]');
+    let current = 'home';
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        current = section.id;
+      }
+    });
+
+    this.activeSection = current;
   }
 }

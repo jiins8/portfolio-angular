@@ -54,6 +54,7 @@
   cursor: pointer;
 }
 
+
 .bar {
   width: 22px;
   height: 2px;
@@ -83,4 +84,20 @@
   .menu-toggle {
     display: flex;
   }
+}
+.nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.nav a.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }

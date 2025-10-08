@@ -3,15 +3,10 @@
   color: #f1f1f1;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   padding: 4rem 2rem;
   box-sizing: border-box;
-}
-
-.container {
-  max-width: 800px;
 }
 
 .about h2 {

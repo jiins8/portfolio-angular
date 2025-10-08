@@ -22,7 +22,6 @@
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav {
@@ -35,7 +34,6 @@
   color: #a0a0a0;
   font-weight: 500;
   transition: color 0.3s;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav a:hover {

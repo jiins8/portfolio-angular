@@ -1,23 +1,36 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, HostListener } from '@angular/core';
 
-import { Header } from './header';
+@Component({
+  selector: 'app-header',
+  standalone: true,
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
+})
+export class HeaderComponent {
+  menuOpen = false;
+  activeSection = 'home';
 
-describe('Header', () => {
-  let component: Header;
-  let fixture: ComponentFixture<Header>;
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Header]
-    })
-    .compileComponents();
+  closeMenu() {
+    this.menuOpen = false;
+  }
 
-    fixture = TestBed.createComponent(Header);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  // 🔹 Detecta en qué sección estás al hacer scroll
+  @HostListener('window:scroll', [])
+  onScroll() {
+    const sections = ['home', 'about', 'projects', 'contact'];
+    for (const id of sections) {
+      const section = document.getElementById(id);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 150 && rect.bottom >= 150) {
+          this.activeSection = id;
+          break;
+        }
+      }
+    }
+  }
+}

@@ -8,3 +8,16 @@
 html {
   scroll-behavior: smooth;
 }
+/*Reset global*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px; /*límite del contenido */
+  margin: 0 auto; /* centra horizontalmente */
+  padding: 0 1.5rem; /* espacio lateral */
+  box-sizing: border-box;
+}

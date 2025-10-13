@@ -10,7 +10,7 @@
 }
 
 /*Contenido*/
-.content{
+.content {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -107,12 +107,13 @@
   transition: filter 0.3s ease;
 }
 
-
 .btn.linkedin:hover,
 .btn.github:hover {
   background-color: #000000e0;
   transform: scale(1.1);
 }
+
+/*Responsive*/
 @media (max-width: 1300px) {
   .content h1 {
     font-size: 5rem;
@@ -123,32 +124,31 @@
   }
 }
 
-/*Responsive*/
-
-@media (max-width: 700px) {
-  .btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
-
-  .btn.linkedin,
-  .btn.github {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .content h1 {
-    font-size: 2.2rem;
+    font-size: 5rem;
   }
 
   .content h2 {
-    font-size: 1.4rem;
+    font-size: 3rem;
+  }
+  
+}
+@media (max-width: 700px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
   }
 
   .content p {
     font-size: 1rem;
+  }
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
   .btn.linkedin,
   .btn.github {
@@ -160,13 +160,14 @@
 @media (max-width: 500px) {
   .btn {
     padding: 0.6rem 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    width: 100px;
   }
 
   .btn.linkedin,
   .btn.github {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   .content p {
@@ -181,8 +182,8 @@
   }
   .btn.linkedin,
   .btn.github {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 
     .content h1 {
       font-size: 1.8rem;

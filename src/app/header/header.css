@@ -114,7 +114,7 @@
   filter: invert(100%); 
 }
 
-/* Show only on mobile */
+/* burgir */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex; 

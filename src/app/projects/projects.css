@@ -1,0 +1,124 @@
+.projects {
+  background-color: #1a1f3a;
+  color: #f1f1f1;
+  padding: 6rem 2rem;
+  min-height: 100vh;
+}
+
+.projects .container {
+  margin: 0 auto;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #00bfff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.projects h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #00bfff;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.projects .subtitle {
+  color: #d1d1d1;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  background-color: #131842;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 191, 255, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  filter: brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.project-card img:hover {
+  filter: brightness(1);
+}
+
+.project-info {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #00bfff;
+  font-size: 1.5rem;
+}
+
+.project-info p {
+  flex: 1;
+  color: #d1d1d1;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  color: #8ab6ff;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  color: #00ffd5; /* Tailwind blue-600 */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #00ffd5; /* darker blue */
+  text-decoration: underline;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .projects .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-info p {
+    font-size: 0.95rem;
+  }
+}

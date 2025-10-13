@@ -4,10 +4,15 @@ import { Component, HostListener } from '@angular/core';
   selector: 'app-header',
   standalone: true,
   templateUrl: './header.html',
-  styleUrl: './header.css'
+  styleUrls: ['./header.css'],
 })
 export class Header {
+  menuActive = false;
   activeSection = 'home';
+
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

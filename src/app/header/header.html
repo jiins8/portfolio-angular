@@ -4,7 +4,15 @@
       <a href="/">Jinshuo</a>
     </div>
 
-    <nav class="nav">
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <img
+        [src]="menuActive ? 'assets/x.png' : 'assets/burger.png'"
+        alt="menu"
+        class="menu-icon"
+      />
+    </button>
+
+    <nav class="nav" [class.active]="menuActive">
       <a href="#home" [class.active]="activeSection === 'home'">Home</a>
       <a href="#about" [class.active]="activeSection === 'about'">About Me</a>
       <a href="#projects" [class.active]="activeSection === 'projects'">Projects</a>

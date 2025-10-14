@@ -34,7 +34,13 @@
       </div>
 
       <!-- Contact Form -->
-      <form class="contact-form">
+      <form
+        class="contact-form"
+        id="contactForm"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input type="hidden" name="access_key" value="7b31057a-b773-4c19-ba79-c1e2e60b6413" />
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required />
 
@@ -51,7 +57,12 @@
         ></textarea>
 
         <button type="submit" class="btn">Send Message</button>
+
+        <!-- Status message -->
+        <p id="status" style="margin-top: 10px"></p>
       </form>
     </div>
   </div>
 </section>
+
+<script src="./contact.js"></script>

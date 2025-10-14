@@ -12,9 +12,18 @@ export class Header {
   isDarkMode = false;
 
   
-  toggleMenu() {
+toggleMenu() {
+  const icon = document.querySelector('.menu-icon') as HTMLElement;
+  if (icon) {
+    icon.classList.add('ng-animating'); // activa animación
+    setTimeout(() => {
+      this.menuActive = !this.menuActive; // cambia el icono
+      icon.classList.remove('ng-animating'); // termina animación
+    }, 150); // tiempo de la animación
+  } else {
     this.menuActive = !this.menuActive;
   }
+}
 
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;

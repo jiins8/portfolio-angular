@@ -30,5 +30,10 @@
         <img src="assets/img/sun.png" alt="Sun" class="icon sun" [class.active]="isDarkMode" />
       </button>
     </nav>
+
+    <div class="menu-overlay" 
+     [class.active]="menuActive" 
+     (click)="toggleMenu()"></div>
+
   </div>
 </header>

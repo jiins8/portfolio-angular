@@ -175,7 +175,7 @@ body.dark-mode .about-image img {
   box-shadow: 0 0 30px #00ffff4d;
 }
 
-  .btn-cv {
+.btn-cv {
   background: #ccf381;
   color: #0a0f3d;
 }
@@ -322,7 +322,6 @@ body.dark-mode .contact-info h3 {
 
 .contact-info p {
   color: #ffffff;
-
 }
 
 body.dark-mode .contact-info p {
@@ -346,15 +345,14 @@ body.dark-mode .social-links a:hover {
 }
 
 .social-links a img {
-   filter: brightness(0) invert(1) drop-shadow(0 0 4px #ffffff);
-
+  filter: brightness(0) invert(1) drop-shadow(0 0 4px #ffffff);
 }
 body.dark-mode .social-links a:hover img {
   filter: brightness(0) invert(1) drop-shadow(0 0 4px #ffffff);
 }
 
 .contact-form {
- background-color: #4831d4;
+  background-color: #4831d4;
   box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
 }
 
@@ -363,11 +361,11 @@ body.dark-mode .contact-form {
   box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   background-color: #ffffff;
   border: 1px solid #ccf381;
   color: #0a0f3d;
-
 }
 body.dark-mode .contact-form input,
 body.dark-mode .contact-form textarea {
@@ -376,7 +374,8 @@ body.dark-mode .contact-form textarea {
   color: #f1f1f1;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   border-color: #4831d4;
 }
 
@@ -385,7 +384,7 @@ body.dark-mode .contact-form textarea:focus {
   border-color: #00ffd5;
 }
 
-.btn-send  {
+.btn-send {
   background-color: transparent;
   border: 1px solid #ccf381;
   color: #ccf381;
@@ -406,6 +405,38 @@ body.dark-mode .btn-send:hover {
   color: #1a1f3a;
 }
 
-div, span, section {
+.footer {
+  background-color: #4831d4;
+  color: #ffffff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode .footer {
+  background-color: #000e3a;
+  color: #ffffff;
+} 
+
+div,
+span,
+section {
   caret-color: transparent;
+}
+
+body,
+body * {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease,
+    box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+*:not(input):not(textarea) {
+  caret-color: transparent;
+}
+
+[contenteditable]:not(input):not(textarea) {
+  caret-color: transparent;
+}
+
+input,
+textarea {
+  caret-color: auto;
 }

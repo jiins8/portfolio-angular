@@ -1,5 +1,4 @@
 .projects {
-  background-color: #1a1f3a;
   color: #f1f1f1;
   padding: 6rem 2rem;
   min-height: 100vh;
@@ -101,18 +100,17 @@
 }
 
 .project-link {
-  color: #00ffd5; /* Tailwind blue-600 */
+  color: #00ffd5;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .project-link:hover {
-  color: #00ffd5; /* darker blue */
+  color: #00ffd5;
   text-decoration: underline;
 }
 
-
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 600px) {
   .projects h2 {
     font-size: 2rem;

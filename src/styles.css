@@ -1,4 +1,6 @@
-:host, html, body {
+:host,
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -20,4 +22,115 @@ body {
   margin: 0 auto; /* centra horizontalmente */
   padding: 0 1.5rem; /* espacio lateral */
   box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  background-color: #ccf381;
+}
+body.dark-mode .header {
+  background-color: rgb(33, 41, 41);
+}
+
+.logo a {
+  /* Color del logo light mode*/
+  color: #000000;
+}
+body.dark-mode .logo a {
+  /* Color del logo dark mode*/
+  color: #ffffff;
+}
+.nav a {
+  /* Color de los links light mode*/
+  color: #00000094;
+}
+body.dark-mode .nav a {
+  /* Color de los links dark mode*/
+  color: #b6b6b6;
+}
+.nav a:hover {
+  /* Color de los links al pasar el mouse light mode*/
+  color: #000000;
+}
+body.dark-mode .nav a:hover {
+  /* Color de los links al pasar el mouse dark mode*/
+  color: #ffffff;
+}
+
+.nav a.active {
+  /* Color del link activo light mode*/
+  color: #000000;
+  border-bottom: 2px solid;
+}
+body.dark-mode .nav a.active {
+  /* Color del link activo dark mode*/
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+body.dark-mode .dark-mode-toggle .icon {
+  /* Color del icono dark mode*/
+  filter: invert(1) brightness(2);
+}
+
+/* home and project section styles */
+.home,
+.projects {
+  /* Color de fondo de home y project light mode*/
+  background-color: #4831d4;
+}
+
+body.dark-mode .home,
+body.dark-mode .projects {
+  /* Color de fondo de home y project dark mode*/
+  background-color: #000e3a;
+}
+
+/* home text color */
+.content h1 {
+  color: #ffffff;
+}
+body.dark-mode .content h1 {
+  color: #ffffff;
+}
+.content h2 {
+  color: #ccf381;
+}
+body.dark-mode .content h2 {
+  color: #00ffd5;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: #ccf381;
+  border: 1px solid;
+  border-color: #ccf381;
+}
+.btn.secondary:hover {
+  background-color: #ccf381;
+  border-color: #ccf381;
+  color: #000000;
+}
+body.dark-mode .btn.secondary {
+  background-color: transparent;
+  color: #00ffd5;
+  border-color: #00ffd5;
+}
+
+body.dark-mode .btn.secondary:hover {
+  background-color: #00ffd5;
+  color: rgb(0, 0, 0);
+}
+
+
+/* about and contact section styles */
+.about,
+.contact {
+  /* Color de fondo de about y contact light mode*/
+  background-color: #ffffff;
+}
+body.dark-mode .about,
+body.dark-mode .contact {
+  /* Color de fondo de about y contact dark mode*/
+  background-color: #1e253f;
 }

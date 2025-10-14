@@ -5,11 +5,9 @@
   text-align: center;
   min-height: 100vh;
   padding: 0 1.5rem;
-  background-color: #00021be0;
   box-sizing: border-box;
 }
 
-/*Contenido*/
 .content {
   max-width: 1200px;
   margin: 0 auto;
@@ -18,13 +16,11 @@
 .content h1 {
   font-size: 8rem;
   font-weight: 700px;
-  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .content h2 {
   font-size: 4rem;
-  color: #00ffd5;
   margin-top: 10px;
   margin-bottom: 1.5rem;
 }
@@ -36,7 +32,6 @@
   margin-bottom: 2rem;
 }
 
-/*Contenedor de botones*/
 .buttons {
   display: flex;
   justify-content: center;
@@ -45,7 +40,6 @@
   gap: 1rem;
 }
 
-/*Botón base*/
 .btn {
   display: inline-flex;
   align-items: center;
@@ -56,38 +50,13 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 2px solid currentColor;
 }
 
-/*Botones de texto*/
 .btn {
   margin-bottom: 100px;
 }
 
-.btn.primary {
-  background-color: #007bff;
-  color: white;
-  border-color: #007bff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.btn.primary:hover {
-  background-color: #0056b3;
-}
-
-.btn.secondary {
-  background-color: transparent;
-  color: #007bff;
-  border-color: #007bff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.btn.secondary:hover {
-  background-color: #007bff;
-  color: white;
-}
-
-/*Botones con icono (LinkedIn y GitHub)*/
 .btn.linkedin,
 .btn.github {
   width: 60px;
@@ -97,6 +66,7 @@
   padding: 0;
   overflow: hidden;
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .btn.linkedin img,
@@ -109,8 +79,9 @@
 
 .btn.linkedin:hover,
 .btn.github:hover {
-  background-color: #000000e0;
+  background-color: none;
   transform: scale(1.1);
+  filter: brightness(0) invert(1) drop-shadow(0 0 4px #ffffff);
 }
 
 /*Responsive*/
@@ -132,7 +103,6 @@
   .content h2 {
     font-size: 3rem;
   }
-  
 }
 @media (max-width: 700px) {
   .content h1 {

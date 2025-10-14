@@ -405,3 +405,7 @@ body.dark-mode .btn-send:hover {
   background-color: #00ffd5;
   color: #1a1f3a;
 }
+
+div, span, section {
+  caret-color: transparent;
+}

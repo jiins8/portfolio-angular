@@ -163,7 +163,7 @@ body.dark-mode .about h2::after {
   color: #4831d4;
 }
 body.dark-mode .about p {
-  color: #d1d1d1;
+  color: #ffffff;
 }
 
 .about-image img {
@@ -175,20 +175,20 @@ body.dark-mode .about-image img {
   box-shadow: 0 0 30px #00ffff4d;
 }
 
-.btn {
+  .btn-cv {
   background: #ccf381;
   color: #0a0f3d;
 }
 
-body.dark-mode .btn {
+body.dark-mode .btn-cv {
   background: #00ffff;
   color: #0a0f3d;
 }
-.btn:hover {
+.btn-cv:hover {
   background: #32d400;
 }
 
-body.dark-mode .btn:hover {
+body.dark-mode .btn-cv:hover {
   background: #00a6e6;
 }
 
@@ -275,7 +275,133 @@ body.dark-mode .project-link:hover {
   margin-bottom: 1rem;
 }
 body.dark-mode .project-info p {
-  color: #d1d1d1;
+  color: #ffffff;
 }
 
 /* CONTACT TEXT COLOR */
+.contact h2 {
+  color: #4831d4;
+}
+
+body.dark-mode .contact h2 {
+  color: #00ffd5;
+}
+
+.contact h2::after {
+  background-color: #4831d4;
+}
+body.dark-mode .contact h2::after {
+  background-color: #00ffd5;
+}
+
+.subtitle {
+  color: #4831d4;
+  margin-bottom: 3rem;
+}
+
+body.dark-mode .subtitle {
+  color: #ffffff;
+}
+
+.contact-info {
+  background-color: #4831d4;
+  box-shadow: 0 8px 20px #3157d4;
+}
+
+body.dark-mode .contact-info {
+  background-color: #131842;
+  box-shadow: 0 8px 20px #00bfff26;
+}
+.contact-info h3 {
+  color: #ccf381;
+}
+
+body.dark-mode .contact-info h3 {
+  color: #00ffd5;
+}
+
+.contact-info p {
+  color: #ffffff;
+
+}
+
+body.dark-mode .contact-info p {
+  color: #ffffff;
+}
+
+.contact-info a {
+  color: #ccf381;
+}
+
+body.dark-mode .contact-info a {
+  color: #00ffd5;
+}
+
+.contact-info a:hover {
+  border-color: #ccf381;
+}
+
+body.dark-mode .social-links a:hover {
+  border-color: #00ffd5;
+}
+
+.social-links a img {
+   filter: brightness(0) invert(1) drop-shadow(0 0 4px #ffffff);
+
+}
+body.dark-mode .social-links a:hover img {
+  filter: brightness(0) invert(1) drop-shadow(0 0 4px #ffffff);
+}
+
+.contact-form {
+ background-color: #4831d4;
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
+}
+
+body.dark-mode .contact-form {
+  background-color: #131842;
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
+}
+
+.contact-form input, .contact-form textarea {
+  background-color: #ffffff;
+  border: 1px solid #ccf381;
+  color: #0a0f3d;
+
+}
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background-color: #1a1f3a;
+  border: 1px solid #2a2f55;
+  color: #f1f1f1;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #4831d4;
+}
+
+body.dark-mode .contact-form input:focus,
+body.dark-mode .contact-form textarea:focus {
+  border-color: #00ffd5;
+}
+
+.btn-send  {
+  background-color: transparent;
+  border: 1px solid #ccf381;
+  color: #ccf381;
+}
+
+body.dark-mode .btn-send {
+  background-color: transparent;
+  border: 1px solid #00ffd5;
+  color: #00ffd5;
+}
+
+.btn-send:hover {
+  background-color: #ccf381;
+  color: #0a0f3d;
+}
+body.dark-mode .btn-send:hover {
+  background-color: #00ffd5;
+  color: #1a1f3a;
+}

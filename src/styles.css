@@ -79,6 +79,29 @@ body.dark-mode .dark-mode-toggle .icon {
   filter: invert(1) brightness(2);
 }
 
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #ccf381;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  body.dark-mode .nav {
+    background-color: rgb(33, 41, 41);
+  }
+  .nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
 /* HOME AND PROJECT */
 
 /* Color de fondo de home y project light mode*/

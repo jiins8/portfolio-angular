@@ -10,6 +10,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 /*Reset global*/
 body {
   margin: 0;
@@ -24,7 +25,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Header styles */
+/* HEADER STYLES */
 .header {
   background-color: #ccf381;
 }
@@ -32,61 +33,81 @@ body.dark-mode .header {
   background-color: rgb(33, 41, 41);
 }
 
+/* Color del logo light mode*/
 .logo a {
-  /* Color del logo light mode*/
   color: #000000;
 }
+
+/* Color del logo dark mode*/
 body.dark-mode .logo a {
-  /* Color del logo dark mode*/
-  color: #ffffff;
-}
-.nav a {
-  /* Color de los links light mode*/
-  color: #00000094;
-}
-body.dark-mode .nav a {
-  /* Color de los links dark mode*/
-  color: #b6b6b6;
-}
-.nav a:hover {
-  /* Color de los links al pasar el mouse light mode*/
-  color: #000000;
-}
-body.dark-mode .nav a:hover {
-  /* Color de los links al pasar el mouse dark mode*/
   color: #ffffff;
 }
 
+/* Color de los links light mode*/
+.nav a {
+  color: #00000094;
+}
+/* Color de los links dark mode*/
+body.dark-mode .nav a {
+  color: #b6b6b6;
+}
+
+/* Color de los links al pasar el mouse light mode*/
+.nav a:hover {
+  color: #000000;
+}
+
+/* Color de los links al pasar el mouse dark mode*/
+body.dark-mode .nav a:hover {
+  color: #ffffff;
+}
+
+/* Color del link activo light mode*/
 .nav a.active {
-  /* Color del link activo light mode*/
   color: #000000;
   border-bottom: 2px solid;
 }
+
+/* Color del link activo dark mode*/
 body.dark-mode .nav a.active {
-  /* Color del link activo dark mode*/
   color: #ffffff;
   border-bottom: 2px solid #ffffff;
 }
 
+/* Color del icono dark mode*/
 body.dark-mode .dark-mode-toggle .icon {
-  /* Color del icono dark mode*/
   filter: invert(1) brightness(2);
 }
 
-/* home and project section styles */
+/* HOME AND PROJECT */
+
+/* Color de fondo de home y project light mode*/
 .home,
 .projects {
-  /* Color de fondo de home y project light mode*/
   background-color: #4831d4;
 }
 
+/* ABOUT AND CONTACT */
+
+/* Color de fondo de about y contact light mode*/
+.about,
+.contact {
+  background-color: #ffffff;
+}
+
+/* Color de fondo de about y contact dark mode*/
+body.dark-mode .about,
+body.dark-mode .contact {
+  background-color: #1e253f;
+}
+
+/* Color de fondo de home y project dark mode*/
 body.dark-mode .home,
 body.dark-mode .projects {
-  /* Color de fondo de home y project dark mode*/
   background-color: #000e3a;
 }
 
-/* home text color */
+/* HOME TEXT COLOR */
 .content h1 {
   color: #ffffff;
 }
@@ -122,15 +143,139 @@ body.dark-mode .btn.secondary:hover {
   color: rgb(0, 0, 0);
 }
 
+/* ABOUT ME TEXT COLOR */
+.about h2 {
+  color: #4831d4;
+}
+body.dark-mode .about h2 {
+  color: #00ffd5;
+}
 
-/* about and contact section styles */
-.about,
-.contact {
-  /* Color de fondo de about y contact light mode*/
-  background-color: #ffffff;
+.about h2::after {
+  background-color: #4831d4;
 }
-body.dark-mode .about,
-body.dark-mode .contact {
-  /* Color de fondo de about y contact dark mode*/
-  background-color: #1e253f;
+
+body.dark-mode .about h2::after {
+  background-color: #00ffd5;
 }
+
+.about p {
+  color: #4831d4;
+}
+body.dark-mode .about p {
+  color: #d1d1d1;
+}
+
+.about-image img {
+  border: 4px solid #4831d4;
+  box-shadow: 0 0 30px #6f00ff4d;
+}
+body.dark-mode .about-image img {
+  border: 4px solid #00ffff;
+  box-shadow: 0 0 30px #00ffff4d;
+}
+
+.btn {
+  background: #ccf381;
+  color: #0a0f3d;
+}
+
+body.dark-mode .btn {
+  background: #00ffff;
+  color: #0a0f3d;
+}
+.btn:hover {
+  background: #32d400;
+}
+
+body.dark-mode .btn:hover {
+  background: #00a6e6;
+}
+
+/* PROJECTS TEXT COLOR */
+.projects h2 {
+  color: #ccf381;
+}
+body.dark-mode .projects h2 {
+  color: #00ffd5;
+}
+.projects h2::after {
+  background-color: #ccf381;
+}
+body.dark-mode .projects h2::after {
+  background-color: #00ffd5;
+}
+.projects .subtitle {
+  color: #ccf381;
+}
+body.dark-mode .projects .subtitle {
+  color: #ffffff;
+}
+.project-card {
+  background-color: #ccf381;
+  box-shadow: 0 8px 20px #00bfff26;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 30px #ccf381;
+}
+
+body.dark-mode .project-card:hover {
+  box-shadow: 0 12px 30px #00bfff4d;
+}
+
+body.dark-mode .project-card {
+  background-color: #131842;
+  box-shadow: 0 8px 20px #00bfff26;
+}
+
+.project-tech-tags span {
+  background-color: #4731d413;
+  color: #4831d4;
+  border: 1px solid #4731d471;
+}
+
+body.dark-mode .project-tech-tags span {
+  background-color: #00ffd514;
+  color: #00ffd5;
+  border: 1px solid #00ffd540;
+}
+
+.view-btn {
+  color: #4831d4;
+}
+body.dark-mode .view-btn {
+  color: #00ffd5;
+}
+
+.project-link {
+  color: #4831d4;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+body.dark-mode .project-link {
+  color: #00ffd5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.project-link:hover {
+  color: #4831d4;
+  text-decoration: underline;
+}
+body.dark-mode .project-link:hover {
+  color: #00ecc5;
+  text-decoration: underline;
+}
+
+.project-info p {
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+body.dark-mode .project-info p {
+  color: #d1d1d1;
+}
+
+/* CONTACT TEXT COLOR */
